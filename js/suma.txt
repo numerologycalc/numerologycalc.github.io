@@ -1,0 +1,3 @@
+https://cdn.rawgit.com/hariharan2394/Numerology-Calculator/1b3a1f7d/js/jsscript.js
+https://cdn.rawgit.com/hariharan2394/Numerology-Calculator/1b3a1f7d/result.html
+https://cdn.rawgit.com/hariharan2394/Numerology-Calculator/1b3a1f7d/js/validator.js

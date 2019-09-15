@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang='en-us'>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+<title>Result Page</title>
+<style>
+@media screen and (max-device-width: 800px){
+body { 
+    background-image: url('images/bgimg1.png');
+    background-position: center; 
+    background-size: cover;
+}}
+@media screen and (min-device-width: 801px){
+	body { 
+	background-image: url('images/bgimg11.jpg');
+    background-repeat: no-repeat;
+    background-position: center; 
+    background-attachment: fixed;
+    background-size: cover;
+}}
+</style>
+<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="css/styleResult.css">
+<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+<script type="text/javascript" src="js/jsscript.js"></script>
+<script type="text/javascript">
+function readURL(event){
+         var getImagePath = URL.createObjectURL(event.target.files[0]);
+         $("body").css('background-image', 'url(' + getImagePath + ')');
+        }
+</script>
+</head>
+<body onload="delayFunction(); get();">
+<div id="loader"></div>
+<div style="display:none;" id="myDiv" class="animate-bottom">
+	<h1>We analysed your details!</h1>
+	<label for="getval" class="bgButton2">Choose Background</label>
+	<input type='file' id='getval' name="background-image" style="visibility:hidden;padding:0px;margin: 0px" onchange="readURL(event)" />
+	<center>
+	<div id="displayDiv">
+	<p class="dispLabel">First Name: </p><p id="dispFirstName" class="disp"></p>
+	<p class="dispLabel">Last Name: </p><p id="dispLastName" class="disp"></p>
+	<p class="dispLabel">DOB (dd/mm/yyyy): </p><p id="dispDob" class="disp"></p>
+	</div><br/>
+	<h2>The Results are:</h2><br/>
+	<div id="displayDiv2">
+	<p class="dispLabel">Your Name No: </p><p id="dispNameNo" class="disp"></p>
+	<p class="dispLabel">Your Date of Birth Nos are: </p>
+	<p class="dispLabel">Basic No: </p><p id="dispDobDateNo" class="disp"></p><br/>
+	<p class="dispLabel">Life Path No:</p><p id="dispDobNo" class="disp"></p><br/>
+	<p id="dispResultPass"></p><p id="dispResultFail"></p><p id="dispResultMod"></p><br/>
+	</div><br/>
+
+	<div id="displayDiv3">
+	<p id="linkDesc">For details click the corresponding Basic No:</p>
+	<a href="http://www.astrojyoti.com/sankhyasastranumber1.htm" class="links"> 1 </a>
+	<a href="http://www.astrojyoti.com/sankhyasastranumber2.htm" class="links"> 2 </a>
+	<a href="http://www.astrojyoti.com/sankhyasastranumber3.htm" class="links"> 3 </a>
+	<a href="http://www.astrojyoti.com/sankhyasastranumber4.htm" class="links"> 4 </a>
+	<a href="http://www.astrojyoti.com/sankhyasastranumber5.htm" class="links"> 5 </a>
+	<a href="http://www.astrojyoti.com/sankhyasastranumber6.htm" class="links"> 6 </a>
+	<a href="http://www.astrojyoti.com/sankhyasastranumber7.htm" class="links"> 7 </a>
+	<a href="http://www.astrojyoti.com/sankhyasastranumber8.htm" class="links"> 8 </a>
+	<a href="http://www.astrojyoti.com/sankhyasastranumber9.htm" class="links"> 9 </a>
+	</div>
+	</center>
+</div>
+</body>
+</html>
